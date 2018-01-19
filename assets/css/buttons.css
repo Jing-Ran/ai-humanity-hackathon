@@ -1,0 +1,63 @@
+/**
+ * buttons.css
+ */
+
+/* Base button styles */
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'],
+.button {
+  border: 0;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Plus-Minus Button */
+.cf-button--plus-minus {
+  border: 2px solid #9f9f9f;
+  border-radius: 50%;
+  height: 26px;
+  position: relative;
+  width: 26px;
+}
+
+.cf-button--plus-minus::after,
+.cf-button--plus-minus::before {
+  background-color: #9f9f9f;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  width: 12px;
+}
+
+.cf-button--plus-minus::after {
+  transform: rotate(90deg);
+}
+
+.cf-button--plus-minus--downy {
+  background-color: #73c5cb;
+  border: 0;
+  box-shadow:
+    0 0 0 5px #fff,
+    0 0 0 6px #414042;
+}
+
+.cf-button--plus-minus--downy::after,
+.cf-button--plus-minus--downy::before {
+  background-color: #fff;
+  width: 14px;
+}
+
+.cf-button--plus-minus--huge {
+  height: 54px;
+  width: 54px;
+}
+
