@@ -29,6 +29,7 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-imagemin": "^2.0.1",
     "grunt-contrib-uglify-es": "git://github.com/gruntjs/grunt-contrib-uglify.git#harmony",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-eslint": "^20.1.0",
     "grunt-postcss": "^0.9.0",
     "grunt-stylelint": "^0.9.0",
