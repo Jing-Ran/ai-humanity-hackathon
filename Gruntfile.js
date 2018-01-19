@@ -147,5 +147,13 @@ module.exports = function (grunt) {
 
   grunt.registerTask('lint', ['stylelint', 'eslint']);
 
+  grunt.registerTask('minify', function(full) {
+    if (full) {
+      grunt.task.run(['uglify', 'icons', 'imagemin']);
+    } else {
+      grunt.task.run(['uglify', 'icons']);
+    }
+  });
+
   grunt.registerTask('build', ['styles', 'icons', 'minify:full']);
 };
