@@ -2,6 +2,8 @@
  * roadmap.css
  *
  * Styling for the roadmap accordion component.
+ *
+ * Follows WAI-ARIA practices guidelines at https://www.w3.org/TR/wai-aria-practices/examples/accordion/accordion.html.
  */
 
 /* TODO: REMOVE */
@@ -33,6 +35,7 @@ body {
   align-items: center;
   display: flex;
   letter-spacing: 0.025em;
+  margin: 0;
 }
 
 .cf-accordion__heading--level-1,
@@ -44,11 +47,13 @@ body {
   font-size: 38px;
   position: relative;
   left: -27px; /* this is about half the toggle size */
+  margin-bottom: 62px;
 }
 
 .cf-accordion__heading--level-2 {
   font-size: 30px;
   left: -15px;
+  margin-bottom: 90px;
   position: relative;
 }
 
@@ -102,4 +107,11 @@ body {
 .cf-accordion__toggle--level-2 {
   margin-left: auto;
   order: 3;
+  transform: rotateX(180deg);
+}
+
+.cf-accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
