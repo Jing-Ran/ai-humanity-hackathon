@@ -1,0 +1,23 @@
+/**
+ * base.css
+ *
+ * Basic css rules for the whole project
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.body-content {
+  margin: 0 auto;
+  max-width: 68.75em;
+  width: 100%;
+}
