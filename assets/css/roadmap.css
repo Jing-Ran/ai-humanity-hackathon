@@ -88,6 +88,7 @@ body {
   font-weight: 600;
 }
 
+/* Accordion Toggles */
 .cf-accordion__toggle {
   display: flex;
   position: relative;
@@ -96,4 +97,9 @@ body {
 
 .cf-accordion__toggle--level-1 {
   margin-right: 24px;
+}
+
+.cf-accordion__toggle--level-2 {
+  margin-left: auto;
+  order: 3;
 }
