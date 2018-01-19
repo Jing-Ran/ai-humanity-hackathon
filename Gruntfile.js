@@ -97,7 +97,7 @@ module.exports = function (grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src: ['*.css', 'assets/js/*.js', '*.html']
+          src: ['*.css', 'assets/js/*.js', '*.html', 'assets/html/*.html']
         },
         options: {
           watchTask: true,
@@ -146,6 +146,14 @@ module.exports = function (grunt) {
   grunt.registerTask('icons', ['svgmin', 'svgstore']);
 
   grunt.registerTask('lint', ['stylelint', 'eslint']);
+
+  grunt.registerTask('minify', function(full) {
+    if (full) {
+      grunt.task.run(['uglify', 'icons', 'imagemin']);
+    } else {
+      grunt.task.run(['uglify', 'icons']);
+    }
+  });
 
   grunt.registerTask('build', ['styles', 'icons', 'minify:full']);
 };
