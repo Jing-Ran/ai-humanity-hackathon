@@ -13,6 +13,9 @@
 /* Buttons */
 @import 'buttons';
 
+/* Icons */
+@import 'icons';
+
 /* Sections */
 @import 'roadmap';
 @import 'base';
