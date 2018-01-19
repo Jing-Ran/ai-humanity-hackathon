@@ -1,0 +1,8 @@
+/**
+ * index.css
+ *
+ * Add your `@import` rules in this file. Run `grunt` or `grunt styles` to process.
+ */
+
+/* Normalize.css */
+@import '../../node_modules/normalize.css/normalize.css';
