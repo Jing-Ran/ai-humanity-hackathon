@@ -1,0 +1,51 @@
+/*--------------------
+JG SOLUTIONS CAROUSEL
+--------------------*/
+.jg-carousel__container {
+}
+
+.jg-carousel__list-container {
+}
+
+.jg-carousel__list {
+  border: 1px solid grey;
+  list-style-type: none;
+}
+
+.jg-carousel__item { 
+  border: 1px solid red;
+}
+
+.jg-carousel__item-content {
+}
+
+.jg-carousel__image-container {
+}
+
+.jg-carousel__image {
+}
+
+.jg-carousel__image-label--blue {
+  background: #73C5CB;
+}
+
+.jg-carousel__image-label--yellow {
+  background: #EEB326;
+}
+
+.jg-carousel__image-label--orange {
+  background: #DB4126;
+}
+
+.jg-carousel__image-label--red {
+  background: #C11F3B;
+}
+
+.jg-carousel__nav-container {
+}
+
+.jg-carousel__arrow-left {
+}
+
+.jg-carousel__arrow-right {
+}
