@@ -8,7 +8,7 @@ module.exports = function (grunt) {
     pkg: grunt.file.readJSON('package.json'),
     postcss: {
       options: {
-        map: true,
+        map: false,
         processors: [
           require('postcss-import')({
             from: 'assets/css/index.css',
@@ -42,8 +42,8 @@ module.exports = function (grunt) {
         sourceMap: true
       },
       dist: {
-        src: ['assets/scripts/*.js'],
-        dest: 'assets/app.js'
+        src: ['assets/js/*.js'],
+        dest: 'app.js'
       }
     },
     uglify: {
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
       options: {
         configFile: '.eslintrc.js'
       },
-      target: ['assets/scripts/*.js']
+      target: ['assets/js/*.js']
     },
     imagemin: {
       dynamic: {
@@ -86,7 +86,7 @@ module.exports = function (grunt) {
         tasks: ['styles']
       },
       js: {
-        files: ['assets/scripts/*.js'],
+        files: ['assets/js/*.js'],
         tasks: ['scripts']
       },
       sprites: {
@@ -97,7 +97,7 @@ module.exports = function (grunt) {
     browserSync: {
       dev: {
         bsFiles: {
-          src: ['*.css', 'assets/scripts/*.js', '*.html']
+          src: ['*.css', 'assets/js/*.js', '*.html']
         },
         options: {
           watchTask: true,
