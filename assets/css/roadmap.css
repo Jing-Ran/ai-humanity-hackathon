@@ -1,0 +1,56 @@
+/**
+ * roadmap.css
+ *
+ * Styling for the roadmap accordion component.
+ */
+
+/* TODO: REMOVE */
+body {
+  color: #414042;
+  font-family: 'Open Sans', sans-serif;
+  max-width: 100%;
+  padding: 20px;
+  width: 1050px;
+}
+
+/* Accordion */
+.cf-accordion {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cf-accordion--level-1 {
+  border-left: 1px solid #73c5cb;
+}
+
+/* Accordion Heading */
+.cf-accordion__heading {
+  align-items: center;
+  display: flex;
+  letter-spacing: 0.025em;
+}
+
+.cf-accordion__heading--level-1,
+.cf-accordion__heading--level-3 {
+  text-transform: uppercase;
+}
+
+.cf-accordion__heading--level-1 {
+  font-size: 38px;
+}
+
+.cf-accordion__heading--level-2 {
+  font-size: 30px;
+}
+
+.cf-accordion__heading--level-3 {
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.cf-accordion__toggle {
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+}
